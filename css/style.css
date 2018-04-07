@@ -36,17 +36,16 @@ h1.Texto{
 }
 
 .Contenido{
-	font-size: 16px;
+	font-size: 15px;
 	text-align: center;
+	margin:10px auto;
+	display:block;
 }
 
 .Contenido {
      background: url(img/cierra.png) no-repeat right bottom;
      width: 400px;
-     padding-left: 455px;
-     padding-right: 18px;
 }
   .Contenido:first-letter {
      background: url(img/abre.png) no-repeat left top;
-     padding-left: 18px;
   }
