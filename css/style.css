@@ -16,7 +16,7 @@ header {
 header .logo {
 	color:#f2f2f2;
 	font-size:50px;
-	font-family: "Mystery Quest", cursive;
+	font-family: "Mystery Quest";
 	line-height:80px;
 	float:left;
 }
@@ -57,23 +57,55 @@ header nav a:active{
 	text-align: center;
 	position: relative;
 	border: none;
-	padding-bottom: 58.33%;
 	overflow: hidden;
+}
+
+h1{
+	display: block;
+    font-size: 2em;
+    font-family: "Mystery Quest";
+    text-align: center;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+h2{
+	display: block;
+    font-size: 2em;
+    text-align: center;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
 }
 
 .img_EAP{	
 	float: left;
 	height: 250px;
-    margin-right: 15px;
-    margin-bottom: 5px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    max-width: 600px;
+    border-width: 1px;
+	border-style: solid;
+	border-color: black;
 }
 
 .Contenido{
 	font-size: 15px;
-	width: 600px;
+	border-width: thick;
+	border-radius: 20px;
+	border-style: solid;
+	border-color: #808080;
+	padding: 15px;
+	max-width: 800px;
 	text-align: justify;
 	margin:auto;
-	display:block;
+	display:block;	 
+    overflow: hidden;   
 }
 
 .obras{
