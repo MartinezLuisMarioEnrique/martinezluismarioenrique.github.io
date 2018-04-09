@@ -18,7 +18,15 @@ header .logo {
 	font-size:50px;
 	font-family: "Mystery Quest";
 	line-height:80px;
+	margin-top: 20px;
 	float:left;
+}
+ 
+header .logo_cuervo {
+	float: left;
+    max-width: 70px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
  
 header nav {
