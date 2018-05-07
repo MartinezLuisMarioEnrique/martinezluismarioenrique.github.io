@@ -1,44 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Mystery+Quest");
 body{
-	background-color: #FAD7A0;
+	background-color: black;
 }
 
 header {
 	width:100%; /* Establecemos que el header abarque el 100% del documento */
 	overflow:hidden; /* Eliminamos errores de float */
-	background:#252932;
-	margin-bottom:10px;
+	height: 300px;
+	background-image: url("../img/banner.jpg");
+	background-size: 100% 300px;
 }
  
-.wrapper {
-	width:80%; /* Establecemos que el ancho sera del 90% */
-	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
-	margin:auto; /* Centramos los elementos */
-	overflow:hidden; /* Eliminamos errores de float */
-}
- 
-header .logo {
+header .titulo {
 	color:#f2f2f2;
 	font-size:50px;
 	font-family: "Mystery Quest";
 	line-height:80px;
 	margin-top: 20px;
 	float:left;
+	margin-left: 20px;
 }
- 
-header .logo_cuervo {
-	float: left;
-    max-width: 70px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
- 
-header nav {
-	float:right;
-	line-height:70px;	
-}
- 
-header nav a {
+
+nav a {
 	display:inline-block;
 	color:#fff;
 	text-decoration:none;
@@ -51,32 +34,28 @@ header nav a {
 	transition:all 500ms ease;
 }
  
-header nav a:hover {
-	background:#f56f3a;
-	border-radius:100px;
+nav a:hover {
+	color:#f56f3a;
+	font-size: 15px;
 }
 
-header nav a:active{
-	/*Gracias a que el elemento está en posición relativa, podemos bajarlo 4 px sin alterar el HTML*/
-	top:8px;
-	/*bajamos el tamaño de la sombra para conseguir el efecto de profundidad*/
-	-moz-box-shadow: 0px 3px 0px 0px rgb(0, 105, 202);
-	-webkit-box-shadow: 0px 3px 0px 0px rgb(0, 105, 202);
-	box-shadow: 0px 3px 0px 0px rgb(0, 105, 202);
-}
-
-.PDF-VIEW {
-	text-align: center;
-	position: relative;
-	border: none;	
-	overflow: hidden;
+.Cuento{
+   max-width: 1000px;
+    height:315px;
+    border: 2px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	padding: 15px;
+	background-color: #2C1A18;
+	color: white;
+    overflow:auto;
 }
 
 h1{
 	display: block;
     font-size: 2em;
     font-family: "Mystery Quest";
-    text-align: center;
+    text-align: left;
     -webkit-margin-before: 0.67em;
     -webkit-margin-after: 0.67em;
     -webkit-margin-start: 0px;
@@ -88,7 +67,7 @@ h1#Titulo_EAP{
 	display: block;
     font-size: 2em;
     font-family: "Times New Roman";
-    text-align: center;
+    text-align: left;
     -webkit-margin-before: 0.67em;
     -webkit-margin-after: 0.67em;
     -webkit-margin-start: 0px;
@@ -108,20 +87,41 @@ h1#Titulo_EAP{
 }
 
 .Contenido{
-	font-size: 15px;
-	border-width: thick;
-	border-radius: 20px;
-	border-style: solid;
-	border-color: #808080;
+	font-size: 15px;	
 	padding: 15px;
-	max-width: 800px;
+	max-width: 1000px;
 	text-align: justify;
 	margin:auto;
 	display:block;	 
-    overflow: hidden;   
+    overflow: hidden;
+    color: white;   
 }
 
 .obras{
 	font-family: fantasy;
 	color: #fb4f14;
 }
+.col-izquierda {
+   	float: left;
+   	width: 20%;   	
+	border-top-width: 0px;
+ }
+ .col-izquierda ul {
+   list-style-type: none;
+   padding-left: 0px;
+ }
+ .col-izquierda ul li {
+   padding-left: 10px;
+   border-left: 5px solid #000;
+
+   background-color: #2C1A18;
+    border-left: 5px solid #000;
+   	border-width: thick;
+	border-style: solid;
+	padding: 15px;
+ }
+
+ .col-derecha {
+   float: right;
+   width: 80%;
+ }
